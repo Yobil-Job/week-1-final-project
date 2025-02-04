@@ -79,7 +79,7 @@ switch(taskOption)
                       case 1:{
                            addStudent() ;
                             counts++;
-                            admin();}
+                            main();}
 
                       break;
                       case 2: viewStudent() ;
@@ -94,7 +94,8 @@ switch(taskOption)
                       break;
                   }
 }
-else{cout<<"Incorrect password"<<endl; main();}
+else{cout<<"Incorrect password"<<endl; main();
+}
 }
 
 //--------------------------------------------
@@ -111,13 +112,18 @@ cout<<"Redirecting to grade adding page..."<<endl;
 addGrade();
 
 }
-else{cout<<"Incorrect password"<<endl;instructor();}
+else{cout<<"Incorrect password"<<endl;main();}
 }
 //---------------------------------------------------
 
 void student(){
+    int k;
 cout<<"Wllcome"<<endl;
+cout<<"do you want to continue press 1 to continue and other to stop"<<endl;
+cin>>k;
+if(k==1)
 seeGrade();
+else main();
 }
 
 //-----------------------------------
@@ -213,7 +219,7 @@ if(a==name[i])
        }
  else{cout<<"Name not found"<<endl;}
 }
-admin();
+main();
 }
 //------------------------------------------------------
 
@@ -275,6 +281,7 @@ for(int i=0,j=1;i<counti;i++,j++){
 }
 
    cout<<"######################################################################"<<endl;
+   main();
 
 }
 
