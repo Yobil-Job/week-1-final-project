@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1738579768 source:c:\users\eyobw\onedrive\desktop\week 1 final project\student managment system\main.cpp
+1738689014 source:c:\users\eyobw\onedrive\desktop\week 1 final project\student managment system\main.cpp
 	<iostream>
+	<vector>
 
